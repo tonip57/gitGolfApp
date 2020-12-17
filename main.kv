@@ -1,0 +1,1720 @@
+<ExitPopup>:
+    FloatLayout:
+        Button:
+            text: "Takaisin"
+            size_hint: 0.4, 0.1
+            pos_hint: {'center_x':0.5,'center_y':0.4}
+            on_press: root.close_popup()
+            
+        Button:
+            text: "Poistu"
+            
+            size_hint: 0.4, 0.1
+            background_normal: ''
+            background_color: 1, 0, 0, 0.9           
+            pos_hint: {'center_x':0.5,'center_y':0.2}
+            on_release:
+                root.on_button_yes()
+                
+                     
+
+ScreenManager:
+    id: sm
+    MenuScreen:
+        id: menuscreen
+    
+    SaaScreen:
+    
+    KierrosScreen:
+    
+    SecondScreen:
+        id: secondscreen
+        
+
+
+<KierrosScreen>:
+    name: 'kierrossivu'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'taustakuva.png'
+        
+    FloatLayout:
+        GridLayout:
+            size_hint: 0.5, 0.6
+            pos_hint: {'center_x':0.5,'center_y':0.6}
+            id: tallennettulayout
+            cols: 2
+            rows: 18
+      
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "1"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: v1
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+    
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "2"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                id: v2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+
+                 
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "3"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "4"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "5"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            
+      
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "6"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                id: v6
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                        
+
+                        
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "7"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: v7
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "8"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                id: v8
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                        
+                            
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "9"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v9
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "10"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v10
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "11"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v11
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                               
+            MDLabel:
+                
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "12"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                id: v12
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                        
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "13"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: v13
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "14"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    
+                            
+            MDLabel:
+                id: v14
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "15"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v15
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "16"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v16
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                        
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "17"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                id: v17
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                            
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "18"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                            
+            MDLabel:
+                id: v18
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    
+                       
+        
+        
+       
+        Button:
+            pos_hint: {'center_x':0.23,'center_y':0.15} 
+            text: "Tyhjennä"
+            size_hint: 0.4, 0.1
+            background_normal: ''
+            background_color: 1, 0, 0, 0.9
+            on_press:
+                root.tyhjenna()
+        
+        
+               
+ 
+        Button:
+            pos_hint: {'center_x':0.77,'center_y':0.15} 
+            text: "Takaisin"
+            size_hint: 0.4, 0.1
+            background_normal: ''
+            background_color: app.theme_cls.primary_color
+            on_press:
+                root.manager.current = 'sivu1'
+                root.manager.transition.direction = 'right'
+
+    
+    
+<MenuScreen>:
+    name: 'sivu1'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'taustakuva.png'
+    
+    MDToolbar:
+        title: "GolfApp"
+        pos_hint: {'center_x':0.5,'center_y':0.95}
+        
+        
+    GridLayout:
+        size_hint: 0.6, 0.4
+        pos_hint: {'center_x':0.5,'center_y':0.65}
+        cols: 1
+        rows: 5
+        MDRectangleFlatIconButton:
+            icon: "golf"
+            text: "Uusi kierros"
+            size_hint: 0.7, 0.7
+            #pos_hint: {'center_x':0.5,'center_y':1}
+            text_color: app.theme_cls.primary_color
+            md_bg_color: 0.6, 0.8, 1, 0.05
+            halign: "center"
+            on_press: 
+                root.manager.current = 'sivu2'
+                root.manager.transition.direction = 'left' 
+            
+        MDLabel:
+            size_hint: 0.7, 0.2
+        
+        MDRectangleFlatIconButton:
+            icon: "content-save"
+            text: "Tallennettu kierros"
+            size_hint: 0.7, 0.7
+            #pos_hint: {'center_x':0.5,'center_y':1}
+            text_color: app.theme_cls.primary_color
+            md_bg_color: 0.6, 0.8, 1, 0.05
+            on_press: 
+                root.manager.current = 'kierrossivu'
+                root.manager.transition.direction = 'left' 
+        
+        MDLabel:
+            size_hint: 0.7, 0.2
+        
+        MDRectangleFlatIconButton:
+            icon: "close"
+            text: "Poistu"
+            size_hint: 0.5, 0.7
+            #pos_hint: {'center_x':0.5,'center_y':0.3}
+            text_color: app.theme_cls.primary_color
+            md_bg_color: 0.6, 0.8, 1, 0.05
+            on_press: 
+                app.get_running_app().stop()
+                
+    Image:
+        source: "pelaaja.png"
+        size_hint: 0.9, 0.9
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+            
+
+<SaaScreen>:
+    name: 'saasivu'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'taustakuva.png'
+    ThreeLineListItem:
+        id: thsaa
+        text: "Two-line item with avatar"
+        secondary_text: "Secondary text here"
+        tertiary_text: "fit more text than usual"
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+
+        
+    BoxLayout: 
+        GridLayout:
+            id: layout3
+            cols: 5
+            rows: 6
+            size_hint_y: 0.5
+            pos_hint: {'center_x':0.5,'center_y':0.55}
+            MDIcon:
+                halign: "center"
+                icon: "clock"
+                theme_text_color: "Custom"
+                halign: "center"
+                
+            
+            MDIcon:
+                halign: "center"
+                icon: "temperature-celsius"
+                theme_text_color: "Custom"
+                halign: "center"
+                
+                
+            
+            MDIcon:
+                halign: "center"
+                icon: "water-percent"
+                theme_text_color: "Custom"
+                halign: "center"
+                
+                
+        
+            MDIcon:
+                halign: "center"
+                icon: "weather-rainy"
+                theme_text_color: "Custom"
+                halign: "center"
+                
+                
+                        
+            MDIcon:
+                halign: "center"
+                icon: "weather-windy"
+                theme_text_color: "Custom"
+                halign: "center"
+                
+                
+                    
+            MDLabel:
+                id: k1
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.5
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: l1
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.4
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: st1
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.3
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            
+            MDLabel:
+                id: sm1
+                text_color: app.theme_cls.primary_color
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.2
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: t1
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                    
+            MDLabel:
+                id: k2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.5
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: l2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.4
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+            MDLabel:
+                id: st2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.3
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: sm2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.2
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: t2
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: k3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.5
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            
+            MDLabel:
+                id: l3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.4
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: st3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.3
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: sm3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.2
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: t3
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+            MDLabel:
+                id: k4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.5
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: l4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.4
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: st4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.3
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: sm4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.2
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+                        
+            MDLabel:
+                id: t4
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+            MDLabel:
+                id: k5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.5
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: l5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.4
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+            MDLabel:
+                id: st5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.3
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+            MDLabel:
+                id: sm5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.2
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        
+                        
+            MDLabel:
+                id: t5
+                theme_text_color: "Custom"
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+                    Color:
+                        rgba: 0, 0.6, .9, 0.1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+        
+    Button:
+        pos_hint: {'center_x':0.5,'center_y':0.15} 
+        text: "Takaisin"
+        size_hint: 0.4, 0.1
+        background_normal: ''
+        background_color: app.theme_cls.primary_color
+        on_press:
+            root.manager.current = 'sivu2'
+            root.manager.transition.direction = 'up'
+        
+<SecondScreen>:
+    name: 'sivu2'  
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'taustakuva.png'
+    BoxLayout:
+        orientation: 'vertical'
+        MDToolbar:
+            title: "GolfApp"             
+
+            MDIconButton:
+                icon: 'home'
+                pos_hint: {'center_x':0.1,'center_y':0.5}
+                on_press: 
+                    root.manager.current = 'sivu1'
+                    root.manager.transition.direction = 'right'
+
+            MDIconButton:
+                icon: 'weather-sunny'
+                pos_hint: {'center_x':0.1,'center_y':0.5}
+                on_press:
+                    root.manager.current = 'saasivu'
+                    root.manager.transition.direction = 'down'
+                    
+            MDIconButton:
+                icon: 'calculator'
+                pos_hint: {'center_x':0.1,'center_y':0.5}
+                on_press: root.piilota_lyontimaara()
+
+           
+            
+                      
+            
+        GridLayout:
+            id: layout1
+            cols: 7
+            size_hint_y: 0.4
+            canvas:
+                Color:
+                    rgba: app.theme_cls.primary_color
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+         
+            MDLabel:
+                
+            MDFloatingActionButton:
+                icon: "arrow-left"
+                md_bg_color: app.theme_cls.primary_color
+                on_release: root.taakse()
+            
+            MDLabel: 
+            
+            BoxLayout:
+                
+                Label:
+                    id: vaylaNumero
+                    text: "1"
+                    font_size: '50sp'
+                    haling: "center"
+            
+            MDLabel:        
+                
+            MDFloatingActionButton:
+                icon: "arrow-right"
+                md_bg_color: app.theme_cls.primary_color
+                on_release: 
+                    root.eteen()
+            
+            MDLabel:
+
+        Label:
+            size_hint_y: 0.3    
+                
+        GridLayout:
+            id: layout2
+            cols: 2
+            size_hint_y: 1
+            size_hint_x: 0.8
+            MDLabel:
+                id: lyontiMaara
+                text: "0"
+                text_color: 0, 0, 1, 1
+                font_size: '50sp'
+                halign: "center"
+                
+            ScrollView:
+                do_scroll_x: False
+                MDList:
+                    OneLineAvatarListItem:
+                        id: pluskuusi
+                        text: "+6"
+                        on_release: root.lyonnit(6)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: plusviisi
+                        text: "+5"
+                        height: '70dp'
+                        on_release: root.lyonnit(5)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: plusnelja
+                        text: "+4"
+                        height: '70dp'
+                        on_release: root.lyonnit(4)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: pluskolme
+                        text: "+3"
+                        height: '70dp'
+                        on_release: root.lyonnit(3)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                                    
+                    OneLineAvatarListItem:
+                        id: pluskaksi
+                        text: "+2"
+                        height: '70dp'
+                        on_release: root.lyonnit(2)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: plusyksi
+                        text: "+1"
+                        height: '70dp'
+                        on_release: root.lyonnit(1)
+                        ImageLeftWidget:
+                            source: "violettipallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: par
+                        text: "E"
+                        height: '70dp'
+                        on_release: root.lyonnit(0)
+                        ImageLeftWidget:
+                            source: "vihreapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: miinusyksi
+                        text: "-1"
+                        height: '70dp'
+                        on_release: root.lyonnit(-1)
+                        ImageLeftWidget:
+                            source: "punainenpallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: miinuskaksi
+                        text: "-2"
+                        height: '70dp'
+                        on_release: root.lyonnit(-2)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+                    
+                    OneLineAvatarListItem:
+                        id: miinuskolme
+                        text: "-3"
+                        height: '70dp'
+                        on_release: root.lyonnit(-3)
+                        ImageLeftWidget:
+                            source: "harmaapallo.png"
+
+                        
+            
+        
+        
+        Label:
+            size_hint_y: 0.3
+        GridLayout:
+            id: layout3
+            cols: 11
+            rows: 4
+            size_hint_y: 0.5
+            MDLabel:
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "1"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "2"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "3"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "4"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "5"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "6"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "7"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "8"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "9"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+            
+            MDLabel:
+            MDLabel:
+                id: v1
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v2
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v3
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v4
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v5
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v6
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v7
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v8
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v9
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+     
+
+            MDLabel:
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "10"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "11"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "12"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "13"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "14"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "15"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "16"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "17"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                theme_text_color: "Custom"
+                text_color: app.theme_cls.primary_color
+                text: "18"
+                bold: True
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+
+
+            MDLabel:
+            MDLabel:
+                id: v10
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v11
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v12
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v13
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v14
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v15
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v16
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v17
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                id: v18
+                text: ""
+                halign: "center"
+                canvas.before:
+                    Color:
+                        rgba: .5, .5, .5, 1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+        
+                    
+        Label:
+            size_hint_y: 0.3    
