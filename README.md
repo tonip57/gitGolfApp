@@ -4,4 +4,4 @@ Golfiin soveltuva tuloksenlaskusovellus. Par-lukemat ja säätietojen haku on su
 frisbeegolfissa, jos väyliä on enintään 18. Tulosta tallennetaan samanaikaisesti JSON-tiedostoon, jotta se ei katoa, vaikka sovelluksen sammuttaisi. Kokonaislyöntimäärän 
 seuraaminen on helppoa laskurin avulla. Laskurin voi ottaa myös pois käytöstä. Par, Birdie, Bogey, jne.. tulokset on merkitty eri värein Raahentienoongolfin par-lukmien mukaan. 
 
-Katso kuvia sovelluksesta SCREENSHOTS-kansiosta!
+Katso kuvia sovelluksesta screenshots-kansiosta!
